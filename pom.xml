@@ -8,6 +8,10 @@
   <name>tomcatLauncher Maven demo</name>
   <url>http://maven.apache.org</url>
   <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  <properties>
     <tomcat.version>8.5.23</tomcat.version>
   </properties>
   <dependencies>
@@ -47,11 +51,7 @@
   <build>
     <finalName>embeddedTomcatSample</finalName>
     <plugins>
-        <plugin>
-          <properties>
-              <maven.compiler.source>1.6</maven.compiler.source>
-              <maven.compiler.target>1.6</maven.compiler.target>
-            </properties>
+        <plugin>          
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>appassembler-maven-plugin</artifactId>
             <version>2.0.0</version>
